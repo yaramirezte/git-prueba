@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+<h1>Adivinar numero lanzado</h1>
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");             
+        document.write("<br>");  
+        
+    }  
+    function imprimir(frase) {
+       
+        document.write(frase);        
+        saltarLinea();
+    }
+
+    var anoMUndial=1930;
+    var limite=parseInt(prompt("Ingrese el ano limite para calcular"))
+       
+    while(anoMUndial<=limite){
+
+        imprimir("hubo mundial de la fifa en el ano " + anoMUndial)
+
+        anoMUndial=anoMUndial+4;
+    }
+    imprimir("fin")
+    
+        
+
+        
+            
+</script>

@@ -1,0 +1,60 @@
+<meta charset="UTF-8">
+<h1>Indice de Masa corporal</h1>
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");             
+        document.write("<br>");  
+        
+    }  
+    function imprimir(frase) {
+       
+        document.write(frase);        
+        saltarLinea();
+    }
+
+    function calcularImc(peso,altura){
+       
+        return (peso/(altura * altura));
+    }
+
+    nombre=prompt("informe su nombre:")
+    pesoInformado=prompt("informe su peso:")
+    alturaInformada=prompt("informe su alura:")
+
+    var imcCalculado= calcularImc(pesoInformado,alturaInformada)
+
+        imprimir(nombre + "Su imc calculado es:"  + imcCalculado);
+        
+        
+        if(imcCalculado < 18.5) {
+        imprimir("IMC abajo de lo recomendado");
+
+       }
+
+      if(imcCalculado >= 18.5) {
+        if(imcCalculado<25){
+            imprimir("IMC wsta dentro de lo normal");
+
+        }
+        
+
+       }
+      if(imcCalculado >=25) {
+
+       if(imcCalculado<30){
+            imprimir("IMC considerado como sobre peso");
+
+       }
+
+    }
+       if(imcCalculado >= 30) {
+        imprimir("IMC aconsiderado como obecidad");
+
+       }
+        
+    
+   
+   
+        
+</script>
